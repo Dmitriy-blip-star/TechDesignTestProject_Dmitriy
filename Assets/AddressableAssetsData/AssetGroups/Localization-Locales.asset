@@ -27,11 +27,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
-  - m_GUID: b955f6a30b501cf4e8c6758ef5277b82
-    m_Address: Russian (ru)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
   - m_GUID: f63b4586766c8d340b2965373ea329af
     m_Address: Italian (it)
     m_ReadOnly: 1
