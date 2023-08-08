@@ -158,9 +158,9 @@ RectTransform:
   m_Father: {fileID: 645064268}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: 135}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80, y: -15}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23127472
@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 23127473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305004552}
+        m_TargetAssemblyTypeName: button_switch_scene, Assembly-CSharp
+        m_MethodName: SwitchScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: first_scene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &23127473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,6 +886,7 @@ GameObject:
   - component: {fileID: 1305004551}
   - component: {fileID: 1305004550}
   - component: {fileID: 1305004549}
+  - component: {fileID: 1305004552}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -947,6 +960,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305004552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305004548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729f1a9b676698e4091b78c21af859ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1489826948
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +983,7 @@ GameObject:
   - component: {fileID: 1489826949}
   - component: {fileID: 1489826951}
   - component: {fileID: 1489826950}
+  - component: {fileID: 1489826952}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -1027,6 +1053,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489826948}
   m_CullTransparentMesh: 1
+--- !u!114 &1489826952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489826948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:389324aec6ae66b44ac9e20444fb4d6d
+    m_TableEntryReference:
+      m_KeyId: 1813346545664
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1489826950}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1511018357
 GameObject:
   m_ObjectHideFlags: 0
